@@ -3,16 +3,16 @@ var app = angular.module('directivePractice', ['ngRoute']);
 app.config(function($routeProvider) {
   $routeProvider
 //  route for home page
-  .when('/home', {
-    templateUrl: 'template.html',
+  .when('/#home', {
+    templateUrl: 'app/views/template.html',
     controller: 'homeController'
       })
-      .when('/about', {
-    templateUrl: 'about.html',
+      .when('/#about', {
+    templateUrl: 'app/views/about.html',
     controller: 'aboutController'
   })
-   .when('/contact', {
-    templateUrl: 'contact.html',
+   .when('/#contact', {
+    templateUrl: 'app/views/contact.html',
     controller: 'contactController'
   });
     
