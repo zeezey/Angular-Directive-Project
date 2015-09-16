@@ -3,12 +3,21 @@ var app = angular.module('directivePractice', ['ngRoute']);
 app.config(function($routeProvider) {
   $routeProvider
 //  route for home page
-  .when('/', {
+  .when('/home', {
     templateUrl: 'template.html',
-    controller: 'mainController'
-    
+    controller: 'homeController'
+      })
+      .when('/about', {
+    templateUrl: 'about.html',
+    controller: 'aboutController'
+  })
+   .when('/contact', {
+    templateUrl: 'contact.html',
+    controller: 'contactController'
   });
     
+
+
 //app.controller('mainController', function ($scope, $route, $routeParams, $location) {
 //    $scope.$route = $route;
 //     $scope.$location = $location;
